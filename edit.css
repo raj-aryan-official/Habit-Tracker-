@@ -1,0 +1,204 @@
+body, h1, h2, h3, p, form, input, button, a, label, select, nav, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background: #000000;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.349);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    font-size: 34px;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #BB86FC;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    background: #03DAC6;
+    transform: scale(1.05);
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 30px 40px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #dbdada;
+    font-size: 16px;
+}
+
+.habit-actions {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.button {
+    background: #BB86FC;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.button:hover {
+    background: #03DAC6;
+    transform: translateY(-2px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+label, select {
+    text-align: left;
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    background: #000000;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #BB86FC;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus {
+    background: #ffffff;
+    color: #000000;
+    border-color: #03DAC6;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #BB86FC;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #03DAC6;
+    transform: translateY(-2px);
+}
+
+p a {
+    color: #BB86FC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #03DAC6;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

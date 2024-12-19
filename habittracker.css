@@ -1,0 +1,347 @@
+body, h1, h2, h3, p, form, input, button, a, label, select, progress, nav, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background 0.3s ease-in-out;
+}
+
+header {
+    width: 100%;
+    background: #000000;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.349);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 34px;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a, nav ul li button {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #BB86FC;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul li a:hover, nav ul li button:hover {
+    background: #03DAC6;
+    transform: scale(1.05);
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 30px 40px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.section {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(187, 134, 252, 0.3);
+}
+
+.section.half-width {
+    width: 48%;
+}
+
+.section.full-width {
+    width: 100%;
+    text-align: left;
+}
+
+.section h3 {
+    color: #BB86FC;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.section p {
+    margin-bottom: 10px;
+    color: #dbdada;
+    font-size: 14px;
+}
+
+.section button {
+    padding: 10px 20px;
+    border: none;
+    background: #BB86FC;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.section button:hover {
+    background: #03DAC6;
+    transform: scale(1.05);
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #555;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #555;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #86fcb3;
+    transition: width 0.3s ease;
+}
+
+.calendar, .edit {
+    flex-basis: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+body, h1, h2, h3, p, form, input, button, a, label, select, progress, nav, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background 0.3s ease-in-out;
+}
+
+header {
+    width: 100%;
+    background: #000000;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.349);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    text-align: center;
+    margin-left: 15px;
+    font-size: 34px;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a, nav ul li button {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #BB86FC;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul li a:hover, nav ul li button:hover {
+    background: #03DAC6;
+    transform: scale(1.05);
+}
+.container {
+    background: #1e1e1e;
+    padding: 30px 40px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 20px; /* Add spacing at the top */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+#calendar-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    margin: 20px 0;
+}
+
+.calendar-day {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.calendar-day:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+.calendar-day.completed {
+    background-color: #4caf50;
+    color: white;
+}
+
+.habit-status {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #BB86FC;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #03DAC6;
+    transform: scale(1.05);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #BB86FC;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    background: #03DAC6;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

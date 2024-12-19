@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body id="Body"> 
+    
+    <div id="container">
+        <div id="signup">
+            <h1><img src="./resume.png" width="40px" height="40px">Habit Tracker</h1>
+            <h2>REGISTER</h2>
+            <form>
+                <input type="text" id="username" placeholder="USERNAME" required><br>
+                <input type="email" id="email" placeholder="EMAIL" required><br>
+                <input type="password" id="password" placeholder="PASSWORD" required><br>
+                <button id="registerbtn" type="submit">REGISTER</button><br>
+                <p>Already a user <a href="#" id="login_btn">login</a></p>
+            </form>
+        </div>
+        <div id="login" style="display: none;">
+            <h1><img src="./resume.png" width="40px" height="40px">Habit Tracker</h1>
+            <h2>LOGIN</h2>
+            <div id="signup">
+                <form>
+                    <input type="email" id="email_login" placeholder="email" required><br>
+                    <input type="password" id="password_login" placeholder="password" required><br>
+                    <button>LOGIN</button><br>
+                    <p><a href="#" id="forgot_password_btn">Forgot Password?</a></p>
+                    <p>Create an account <a href="#" id="signup_btn">register</a></p>
+                </form>
+            </div>
+         </div>
+    <script src="login.js"></script>
+</body>
+</html>

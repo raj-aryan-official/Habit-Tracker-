@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="habittracker.css">
+</head>
+<body>
+    <header>
+        <h1><img src="./resume.png" width="40px" height="40px">Habit Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="timelog.html">Time Log</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="edit.html">Edit</a></li>
+                <li><a href="habittracker.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+           
+            <div class="section full-width" id="progress">
+                <h3>Today's Progress</h3>
+                <button id="progress-button" class="button"><a href="progress.html">Progress</a></button>
+            
+            </div>
+        </div>
+</div>
+    <div class="container">
+        <h1><b>January</b></h1>
+        <div id="calendar-container"></div>
+        <div class="habit-status">
+            <label for="habit-checkbox">Habit Completed:</label>
+            <input type="checkbox" id="habit-checkbox">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="section full-width" id="max-streak">
+                <h3>welcome To Habit Tracker</h3>
+                <p>Our is to empower individuals by fostering self-awareness and personal growth. By consistently recording daily habits and activities, users can visualize their progress, identify patterns, and stay motivated. This tool not only helps in building and maintaining positive routines but also serves as a gentle nudge towards achieving long-term goals. Through this structured approach, habit trackers aim to transform aspirations into tangible results, promoting a healthier, more organized lifestyle.</p>
+            </div>
+            
+                 <div id="calendar-content"></div>
+        </div>
+    </div>
+
+   <script src="habittracker.js"></script>
+    
+</body>
+</html>
