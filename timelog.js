@@ -16,15 +16,15 @@ function startTracking() {
 
     logTimeSpent(userName, startTime, selectedHabit, timeSpent);
 
-    status.textContent =` Logged ${selectedHabit} for ${timeSpent}.`;
+    status.textContent = `Logged ${selectedHabit} for ${timeSpent}.`;
 }
 
 function formatTime(seconds) {
     const hrs = Math.floor(seconds / 3600);
     const mins = Math.floor((seconds % 3600) / 60);
     const secs = seconds % 60;
-    return `${hrs} hour${hrs !== 1 ? 's' : ''} ${mins} minute${mins !== 1 ? 's' : ''} ${secs} second${secs !== 1 ? 's' : ''};
-}`;
+    return `${hrs} hour${hrs !== 1 ? 's' : ''} ${mins} minute${mins !== 1 ? 's' : ''} ${secs} second${secs !== 1 ? 's' : ''}`;
+}
 
 function logTimeSpent(userName, date, habit, timeSpent) {
     const historyList = document.getElementById('historyList');
@@ -59,5 +59,4 @@ function showHistory() {
 document.addEventListener('DOMContentLoaded', () => {
     const historyList = document.getElementById('historyList');
     historyList.innerHTML = ''; 
-})
-}
+});
