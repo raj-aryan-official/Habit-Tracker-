@@ -16,7 +16,7 @@ function startTracking() {
 
     logTimeSpent(userName, startTime, selectedHabit, timeSpent);
 
-    status.textContent = Logged ${selectedHabit} for ${timeSpent}.;
+    status.textContent =` Logged ${selectedHabit} for ${timeSpent}.`;
 }
 
 function formatTime(seconds) {
@@ -59,4 +59,5 @@ function showHistory() {
 document.addEventListener('DOMContentLoaded', () => {
     const historyList = document.getElementById('historyList');
     historyList.innerHTML = ''; 
-});
+})
+}
